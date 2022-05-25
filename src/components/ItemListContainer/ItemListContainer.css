@@ -1,0 +1,9 @@
+.ItemList{
+    display: flex;
+    justify-content: center;
+}
+.ItemList h2{
+    color: rgb(207, 139, 11);
+    text-transform: uppercase;
+    text-shadow:2px 2px black;
+}

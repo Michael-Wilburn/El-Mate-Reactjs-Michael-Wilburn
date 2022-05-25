@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: url("./images/Banner-mate.jpeg") center/cover no-repeat;
+    color: black;
+    background-color:grey;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item{
+    display: inline;
+}
+.nav-item a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-item a:active{
+    color: whitesmoke;
+}
+.nav-item a:hover{
+    color: rgb(253, 173, 0);
+}
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+.cart-items {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: rgb(253, 173, 0);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: whitesmoke;
+}
+.cartIcon{
+    font-size: 1.5rem;
+    color: whitesmoke;
 }
