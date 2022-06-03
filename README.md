@@ -1,3 +1,17 @@
+# Little proyect of Cart-Shopping 
+
+link to the repo:
+                    https://github.com/moneyripper/El-Mate-Reactjs-Michael-Wilburn
+
+link to see the app running:    
+                                https://moneyripper.github.io/El-Mate-Reactjs-Michael-Wilburn/
+
+
+
+
+##########################################--------------------------------##########################################
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
