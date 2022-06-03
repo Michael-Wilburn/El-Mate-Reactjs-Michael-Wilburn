@@ -25,9 +25,10 @@ body {
     display: inline;
 }
 .nav-item a{
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-weight: bold;
+    text-shadow:2px 2px white;
 }
 .nav-item a:active{
     color: whitesmoke;

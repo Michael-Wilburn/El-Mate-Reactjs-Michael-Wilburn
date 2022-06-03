@@ -5,7 +5,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const NavBar = () => {
     return (
         <nav className="nav">
-        <a href="#" className="brand"><CardWidget greeting="el mate"/></a>          
+        <CardWidget greeting="el mate"/>         
         <ul className="nav-list">
                 <li className="nav-item">
                     <a href="#">Mates</a>
@@ -26,7 +26,7 @@ const NavBar = () => {
                     <a href="#">Termos</a>
                 </li>
             </ul>
-            <div class="cart-btn">
+            <div className="cart-btn">
                 <span className="nav-icon"><FontAwesomeIcon className="cartIcon" icon={faShoppingCart}/></span>
                 <div className="cart-items">0</div>
             </div>
