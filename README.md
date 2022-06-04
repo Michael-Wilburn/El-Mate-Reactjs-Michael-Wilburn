@@ -7,8 +7,6 @@ link to see the app running:
                                 https://moneyripper.github.io/El-Mate-Reactjs-Michael-Wilburn/
 
 
-
-
 ##########################################--------------------------------##########################################
 
 
