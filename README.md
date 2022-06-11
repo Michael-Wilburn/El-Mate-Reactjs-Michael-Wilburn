@@ -2,7 +2,7 @@
 
 link to the repo:
                     https://github.com/moneyripper/El-Mate-Reactjs-Michael-Wilburn
-##########################################--------------------------------##########################################
+
 
 # Como hacer funcionar la App en tu computadora
 

@@ -15,9 +15,9 @@ const ItemDetailContainer = () => {
         setLoading(true);
         getProductById(productId).then(response => {
             setProduct(response)
-        }). catch(error => {
+        }).catch(error => {
             console.log(error);
-        }). finally(() => {
+        }).finally(() => {
             setLoading(false);
         })
     }, [productId])
@@ -28,7 +28,6 @@ const ItemDetailContainer = () => {
 
     return (
         <>
-            <h1>Detalle del producto</h1>
             <ItemDetail {...product}/>
         </>
     )
