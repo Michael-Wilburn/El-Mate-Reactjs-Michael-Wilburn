@@ -1,0 +1,14 @@
+.loader {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    font-size: 4rem;
+    animation: rotate 1.5s linear infinite;
+    color: white;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }

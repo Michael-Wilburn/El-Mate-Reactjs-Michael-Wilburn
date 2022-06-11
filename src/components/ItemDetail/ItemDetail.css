@@ -1,0 +1,57 @@
+.productBox{
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.productDetail{
+    background-color: gainsboro;
+    list-style: none;
+    font-weight: 700;
+    display: flex;
+    width: 1000px;
+    border-radius: 2rem;
+}
+
+.bigPicture{
+    width: 650px;
+    height: auto;
+    border-radius: 1rem;
+    
+}
+
+.productTitle{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.detailBox{
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 1rem;
+}
+
+
+.description{
+    font-weight: 500;
+}
+
+.itemTitle{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.carritoBtn{
+    background-color:rgb(253, 173, 0) ;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    height: 4rem;
+    padding: 1rem;
+}

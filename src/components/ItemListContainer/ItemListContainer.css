@@ -4,7 +4,7 @@
 .ItemListTitle{
     color: rgb(253, 173, 0);
     text-transform: uppercase;
-    text-shadow:2px 2px black;
+    text-shadow:1px 1px black;
     padding: 3rem 0;
 }
 
@@ -21,24 +21,19 @@
 }
 .Item{
     text-align: center;
-    text-decoration: none;
-    color:white; 
+    text-decoration: none; 
     text-transform: capitalize;
-    border: 1px solid white;
-    border-radius: 1.5rem;
-    padding-bottom:0.5rem;
+    padding: 0.5rem;
+    
 }
 .ItemPrice{
   color: rgb(253, 173, 0);
   font-weight: bold;
 }
-.ItemName{
-  color: white;
-  font-weight: 700;
-}
 .product-img {
   height: 400px;
   width: 400px;
+  border: 1px solid black;
 }
 .product-img {
   display: block;
@@ -46,3 +41,20 @@
   max-height: 20rem;
   border-radius: 1rem 1rem 0 0;
 }
+
+.loader {
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  font-size: 4rem;
+  animation: rotate 1.5s linear infinite;
+  color: white;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

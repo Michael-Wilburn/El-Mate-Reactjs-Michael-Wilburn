@@ -73,14 +73,56 @@ const products = [
         stock: 10,
         description: 'Un Mate de madera de gran calidad color negro'
     },
-   
+    {
+        id: '200',
+        title: "Termo Stanley",
+        price: 20000,
+        category:'termos',
+        img: require('./images/termos/termo-stanley-1.webp'),
+        stock: 10,
+        description: 'Termo blanco Adventure 739 ML con Tapón Cebador de acero inoxidable pola'
+    },
+    {
+        id: '201',
+        title: "Termo Acero Inoxidable Doble Capa Frio Calor 2 Litros",
+        price: 8000,
+        category:'termos',
+        img: require('./images/termos/termo-stanley-3.webp'),
+        stock: 10,
+        description: "Termo Acero Inoxidable Doble Capa Frio Calor 2 Litros",
+        
+    },
+    {
+        id: '203',
+        title:"Termo Coleman Acero Inoxidable Mate 700ML Rojo",
+        price: 7600,
+        category: "termos",
+        img: require( './images/termos/termo-Coleman-4.webp'),
+        stock: 10,
+        description: "Termo Coleman Acero Inoxidable Mate 700ML Rojo", 
+    }
 ]
-
 
 export const getProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products)
-        }, 2000)
+        }, 1000)
+    })
+}
+
+export const getProductById = (id) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 1000)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 1000)
     })
 }

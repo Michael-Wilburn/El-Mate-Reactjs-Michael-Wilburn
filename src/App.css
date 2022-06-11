@@ -1,41 +1,10 @@
 
 body {
-    background: url("./images/Banner-mate.jpeg") center/cover no-repeat;
+    
     color: black;
-    background-color:grey;
+    background-color:gainsboro;
 }
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-}
-.brand{
-    color: whitesmoke;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.nav-list{
-    display: flex;
-    justify-content: space-between;
-    width: 700px;
-}
-.nav-item{
-    display: inline;
-}
-.nav-item a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    text-shadow:2px 2px white;
-}
-.nav-item a:active{
-    color: whitesmoke;
-}
-.nav-item a:hover{
-    color: rgb(253, 173, 0);
-}
+
 .cart-btn {
     position: relative;
     cursor: pointer;

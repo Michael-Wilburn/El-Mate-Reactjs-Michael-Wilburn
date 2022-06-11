@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.brand{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+.nav-item{
+    display: inline;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.nav-item-active{
+    color: rgb(253, 173, 0);
+}
+.nav-item a:active{
+    color: whitesmoke;
+}
+.nav-item a:hover{
+    color: rgb(253, 173, 0);
+}

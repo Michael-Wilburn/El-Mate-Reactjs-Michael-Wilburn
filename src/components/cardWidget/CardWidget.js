@@ -5,7 +5,7 @@ const CardWidget = (props) => {
     return (
         <div className="cardWidget">
             <img src={logo}/>
-            <a href="#">{props.greeting}</a>
+            {props.greeting}
         </div>
         
     )
