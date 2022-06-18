@@ -3,8 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
+import { useContext } from 'react'
+import CartContext from '../../context/CartContext'
+
 
 const NavBar = () => {
+
+    const {getCartQuantity, totalQuantity} = useContext(CartContext)
+
+    // const totalQuantity = getCartQuantity()
+   
+    
     return (
         <nav className="nav">
             <Link to='/'><CardWidget greeting="el mate"/></Link>   
@@ -42,7 +51,7 @@ const NavBar = () => {
             </ul>
             <div className="cart-btn">
                 <span className="nav-icon"><FontAwesomeIcon className="cartIcon" icon={faShoppingCart}/></span>
-                <div className="cart-items">0</div>
+                <div className="cart-items">{totalQuantity}</div>
             </div>
         </nav>
     )

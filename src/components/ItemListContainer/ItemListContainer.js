@@ -1,5 +1,4 @@
 import "./ItemListContainer.css"
-import logocarga from '../cardWidget/mate.png'
 import { useState, useEffect } from 'react'
 import { getProducts, getProductsByCategory } from '../../asyncmock'
 import ItemList from '../ItemList/ItemList'
@@ -18,21 +17,21 @@ const ItemListContainer = (props) => {
         if(!categoryId){
             getProducts().then(response => {
                 setProducts(response)
-            }). catch(error => {
+            }).catch(error => {
                 console.log(error);
-            }). finally(() => {
+            }).finally(() => {
                 setLoading(false);
             })
         } else {
             getProductsByCategory(categoryId).then(response =>{
                 setProducts(response)
-            }). catch(error => {
+            }).catch(error => {
                 console.log(error);
-            }). finally(() => {
+            }).finally(() => {
                 setLoading(false);
             })
         }
-    }, [categoryId])
+    }, [categoryId]);
 
     if(loading){
         return <FontAwesomeIcon className="loader" icon={faSpinner}/>
