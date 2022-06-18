@@ -5,17 +5,11 @@ import NavBar from './components/NavBar/NavBar.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { useState, createContext } from 'react';
-// import Counter from './components/Counter/Counter';
-// import ScrollAnimation from './components/ScrollAnimation/ScrollAnimation';
 import {CartProvider} from './context/CartContext'
-
 
 function App() {
   return (
     <div className="App">
-      {/* <Counter/> */}
-      {/* <ScrollAnimation/> */}
       <CartProvider>
         <BrowserRouter>
             <NavBar/>

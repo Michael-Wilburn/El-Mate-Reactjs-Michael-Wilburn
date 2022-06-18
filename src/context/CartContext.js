@@ -9,8 +9,8 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     let totalQuantity = 0;
     cart.forEach((prod) => (totalQuantity += prod.quantity));
-    
-    setTotalQuantity(totalQuantity)
+    setTotalQuantity(totalQuantity);
+    console.log(cart);
   }, [cart]);
 
   const addItem = (productToAdd) => {
@@ -24,11 +24,15 @@ export const CartProvider = ({ children }) => {
   };
 
   const isInCart = (id) => {
-    return cart.some(prod => prod.id === id)
-}
+    return cart.some((prod) => prod.id === id);
+  };
+
+  const Clear = () =>{
+    setCart([]);
+  }
 
   return (
-    <CartContext.Provider value={{ cart, totalQuantity, addItem, removeItem, isInCart }}>
+    <CartContext.Provider value={{ cart, totalQuantity, addItem, removeItem, isInCart, Clear }}>
       {children}
     </CartContext.Provider>
   );

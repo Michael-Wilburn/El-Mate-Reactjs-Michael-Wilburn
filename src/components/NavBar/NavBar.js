@@ -9,11 +9,8 @@ import CartContext from '../../context/CartContext'
 
 const NavBar = () => {
 
-    const {getCartQuantity, totalQuantity} = useContext(CartContext)
-
-    // const totalQuantity = getCartQuantity()
+    const {totalQuantity} = useContext(CartContext)
    
-    
     return (
         <nav className="nav">
             <Link to='/'><CardWidget greeting="el mate"/></Link>   
