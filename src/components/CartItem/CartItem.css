@@ -1,0 +1,16 @@
+.Cart-Item{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 90%;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px #333 inset;
+}
+
+.Cart-Item p {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.Cart-title{
+    max-width: 100px;
+}

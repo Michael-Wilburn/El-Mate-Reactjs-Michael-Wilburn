@@ -46,10 +46,12 @@ const NavBar = () => {
                     </NavLink>
                 </li>
             </ul>
+            <Link to='/cart'>
             <div className="cart-btn">
                 <span className="nav-icon"><FontAwesomeIcon className="cartIcon" icon={faShoppingCart}/></span>
                 <div className="cart-items">{totalQuantity}</div>
             </div>
+            </Link>
         </nav>
     )
 }
