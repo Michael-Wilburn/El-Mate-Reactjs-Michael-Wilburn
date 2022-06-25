@@ -12,9 +12,9 @@ body {
 }
 .cart-items {
     position: absolute;
-    top: -8px;
-    right: -8px;
-    background: rgb(253, 173, 0);
+    top: -16px;
+    right: -10px;
+    background: #28a745;
     padding: 0 5px;
     border-radius: 30%;
     color: whitesmoke;

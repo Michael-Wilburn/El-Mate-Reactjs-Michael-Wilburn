@@ -1,13 +1,14 @@
 import './CartItem.css'
-import { useContext,useEffect,useState } from "react";
+import { useContext } from "react";
 import CartContext from '../../context/CartContext'
 
-const CartItem = ({title, quantity, price, id}) => {
+const CartItem = ({title, category , quantity, price, id}) => {
     const {removeItem} = useContext(CartContext)
    
 
     return (
         <li className="Cart-Item">
+            <p>{category}</p>
             <p id="Cart-title">{title}</p>
             <p>Cantidad: {quantity}</p>
             <p>$ {price}</p>

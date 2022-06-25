@@ -94,7 +94,7 @@ const products = [
     },
     {
         id: '203',
-        title:"Termo Coleman Acero Inoxidable Mate 700ML Rojo",
+        title:"Coleman Acero Inoxidable",
         price: 7600,
         category: "termos",
         img: require( './images/termos/termo-Coleman-4.webp'),

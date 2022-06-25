@@ -46,12 +46,33 @@
 }
 
 .carritoBtn{
-    background-color:rgb(253, 173, 0) ;
+    background-color: #28a745 ;
     color: black;
     font-size: 1rem;
     font-weight: 700;
     border: 1px solid black ;
-   
+    height: 4rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.carritoBtn2{
+    background-color: #FFA900 ;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid black ;
+    height: 4rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.carritoBtn1{
+    background-color: #28a745 ;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid black ;
     height: 4rem;
     padding: 1rem;
     cursor: pointer;
@@ -60,11 +81,23 @@
 
 .ItemCount{
     background-color: white;
-    height: 40px;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.Counter{
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 20px
+}
 
+.Counter-op{
+    margin: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

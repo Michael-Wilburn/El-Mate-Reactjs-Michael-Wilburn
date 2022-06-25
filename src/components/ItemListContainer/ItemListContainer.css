@@ -2,7 +2,7 @@
     text-align: center;
 }
 .ItemListTitle{
-    color: rgb(253, 173, 0);
+    color: black;
     text-transform: uppercase;
     text-shadow:1px 1px black;
     padding: 3rem 0;
@@ -26,10 +26,11 @@
     padding: 0.25rem;
     background-color: grey;
     border-radius: 1rem;
+    max-width: 400px;
     
 }
 .ItemPrice{
-  color: rgb(253, 173, 0);
+  color: white;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -61,13 +62,13 @@
 }
 
 .ItemBtn{
-  background-color:rgb(253, 173, 0) ;
+  background-color:#28a745 ;
   color: black;
   font-size: 1rem;
   border: none;
   padding: 1rem;
   border-radius: 1rem;
-  
+  margin: 1rem;
 
 
 }
