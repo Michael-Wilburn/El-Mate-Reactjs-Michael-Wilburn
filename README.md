@@ -83,18 +83,9 @@ Tipear el comando:
     
 En esta instancia el proyecto debería esta corriedno en tu navegador local.
 
-## Variables de entorn
+## Variables de entorno
 
-REACT_APP_apiKey= YOUR_apiKey
-REACT_APP_authDomain= YOUR_authDomain
-REACT_APP_projectId= YOUR_projectId
-REACT_APP_storageBucket= YOUR_storageBucket
-REACT_APP_messagingSenderId= YOUR_messagingSenderId
-REACT_APP_appId= YOUR_appId
-
-
-
-
+-Ver variables en [.env.example](https://github.com/moneyripper/El-Mate-Reactjs-Michael-Wilburn/blob/main/.env.example)
 
 
 
