@@ -4,7 +4,7 @@
 
 El Mate es una SPA (single page application) creada para la venta de productos relacionados a la cultura del mate.
 
-#Deploy de la APP
+# Deploy de la APP
 El deploy de MVP esta hecho en Heroku. Puede ver el funcionamiento de la app en el siguiente link:
 
 https://el-mate.herokuapp.com/
