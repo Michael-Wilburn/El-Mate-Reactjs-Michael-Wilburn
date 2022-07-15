@@ -83,6 +83,14 @@ Tipear el comando:
     
 En esta instancia el proyecto debería esta corriedno en tu navegador local.
 
+## Variables de entorn
+
+REACT_APP_apiKey= YOUR_apiKey
+REACT_APP_authDomain= YOUR_authDomain
+REACT_APP_projectId= YOUR_projectId
+REACT_APP_storageBucket= YOUR_storageBucket
+REACT_APP_messagingSenderId= YOUR_messagingSenderId
+REACT_APP_appId= YOUR_appId
 
 
 
