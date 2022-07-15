@@ -1,21 +1,10 @@
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-}
 
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-}
-.brand{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+
 }
 .nav-list{
     display: flex;
@@ -27,16 +16,65 @@
     color: black;
     text-decoration: none;
     font-weight: bold;
-    
 }
 .nav-item-active{
     color: #28a745;
 }
-.nav-item a:active{
-    color: whitesmoke;
-}
-.nav-item a:hover{
-    color: #343a40;
-}
 
-.cartIcon{color: black;}
+.nav-item a:hover{
+    color: #28a745;
+}
+.responsive-menu{
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav{
+        height: 60px;
+    }
+    .nav-logo{
+        position: absolute;
+        left: 10px;
+    }
+    .nav-cart{
+        position: absolute;
+        right: 25px;
+    }
+    .responsive-menu{
+        display: block;
+        position: absolute;
+        right: 50px;
+        font-size: 1.5rem;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-item{
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        opacity: 0.9;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    #menu{
+        display: block;
+        margin-right: 30px;
+    }
+    #checkbox-menu{
+        display: none;
+    }
+    .nav-list-menu{
+       display: flex;
+       flex-wrap: wrap;
+       width: 100vw;
+       position:relative;
+       top: 220px;
+       z-index: 1000;
+    }
+   
+    }

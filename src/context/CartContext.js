@@ -11,13 +11,13 @@ export const CartProvider = ({ children }) => {
     let totalQuantity = 0;
     cart.forEach((prod) => (totalQuantity += prod.quantity));
     setTotalQuantity(totalQuantity);
-    updateTotalToPay()
+    updateTotalToPay();
   }, [cart]);
-
+  
   const updateTotalToPay = () => {
     let total = 0
     cart.forEach(prod => {
-        total += prod.quantity * prod.price
+      total += prod.quantity * prod.price
     })
     
     setTotalToPay(total)

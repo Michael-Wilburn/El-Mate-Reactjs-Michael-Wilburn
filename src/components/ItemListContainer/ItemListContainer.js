@@ -1,6 +1,5 @@
 import "./ItemListContainer.css"
 import { useState, useEffect } from 'react'
-import { getProducts, getProductsByCategory } from '../../asyncmock'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,7 +15,6 @@ const ItemListContainer = (props) => {
     
     useEffect(() => {
         setLoading(true);
-
         const collectionRef = categoryId ? (query(collection(db, 'products'), where('category','==',categoryId))) 
         : (collection(db, 'products'));
 
@@ -30,24 +28,6 @@ const ItemListContainer = (props) => {
         }).finally(()=>{
             setLoading(false)
         })
-
-        // if(!categoryId){
-        //     getProducts().then(response => {
-        //         setProducts(response)
-        //     }).catch(error => {
-        //         console.log(error);
-        //     }).finally(() => {
-        //         setLoading(false);
-        //     })
-        // } else {
-        //     getProductsByCategory(categoryId).then(response =>{
-        //         setProducts(response)
-        //     }).catch(error => {
-        //         console.log(error);
-        //     }).finally(() => {
-        //         setLoading(false);
-        //     })
-        // }
     }, [categoryId]);
 
     if(loading){
@@ -55,8 +35,8 @@ const ItemListContainer = (props) => {
     }
 
     return (
-        <div className="ItemListContainer">
-             <h2 className="ItemListTitle">{categoryId ? categoryId : 'Catalogo de Productos'}</h2>
+        <div className="item-list-container">
+             <h2 className="item-list-title">{categoryId ? categoryId : 'Catálogo de Productos'}</h2>
             {products.length > 0 
                 ? <ItemList products={products}/>
                 : <h1>No hay productos</h1>

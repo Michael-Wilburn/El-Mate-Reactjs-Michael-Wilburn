@@ -1,13 +1,11 @@
 import logo from './mate.png'
 import './CardWidget.css'
 
-const CardWidget = (props) => {
+const CardWidget = () => {
     return (
         <div className="cardWidget">
-            <img src={logo}/>
-            {props.greeting}
+            <img src={logo} alt="logo"/>
         </div>
-        
     )
 }
 

@@ -1,6 +1,5 @@
 import "./ItemDetailContainer.css"
 import { useState, useEffect} from 'react'
-import { getProductById } from '../../asyncmock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,13 +26,6 @@ const ItemDetailContainer = () => {
         }).finally(()=>{
             setLoading(false)
         })
-        // getProductById(productId).then(response => {
-        //     setProduct(response)
-        // }).catch(error => {
-        //     console.log(error);
-        // }).finally(() => {
-        //     setLoading(false);
-        // })
     }, [productId])
 
     if(loading){

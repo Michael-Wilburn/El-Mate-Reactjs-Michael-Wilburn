@@ -1,0 +1,25 @@
+.cart-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.cart-backstore{ 
+    background-color: #1266F1;
+    margin: 2rem;
+    border: none;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border: white;
+    padding: 1rem;
+    margin-bottom: 0;
+    align-self: center;
+}
+.cart-total{
+    margin: 1rem;
+}
+
+
+

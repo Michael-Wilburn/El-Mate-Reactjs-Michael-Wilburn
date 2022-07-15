@@ -1,0 +1,19 @@
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+
+.cart-items {
+    position: absolute;
+    top: -16px;
+    right: -10px;
+    background: #28a745;
+    padding: 0 5px;
+    border-radius: 30%;
+    color: whitesmoke;
+}
+
+.cartIcon{
+    font-size: 1.5rem;
+}

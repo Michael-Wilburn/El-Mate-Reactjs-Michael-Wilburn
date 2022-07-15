@@ -1,103 +1,123 @@
-.productBox{
-    padding: 2rem;
-    border-radius: 1rem;
+.product{
+    margin: 2rem;
+    z-index: 1;
 }
-.productDetail{
-    background-color: grey;
-    list-style: none;
-    font-weight: 700;
-    display: flex;
-    width: 1000px;
-    border-radius: 2rem;
-}
-
-.bigPicture{
-    width: 650px;
-    height: auto;
-    border-radius: 1rem;
-    
-}
-
-.productTitle{
-    text-align: center;
-    font-weight: 700;
+.product-title{
     font-size: 2rem;
+    font-weight: 700;
+    margin: 4rem 0;
     text-transform: capitalize;
 }
-
-.detailBox{
-    max-width: 500px;
-    text-align: center;
+.product-detail{
     display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    padding: 1rem;
-}
-
-
-.description{
-    font-weight: 500;
-}
-
-.itemTitle{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-}
-
-.carritoBtn{
-    background-color: #28a745 ;
-    color: black;
-    font-size: 1rem;
-    font-weight: 700;
-    border: 1px solid black ;
-    height: 4rem;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.carritoBtn2{
-    background-color: #FFA900 ;
-    color: black;
-    font-size: 1rem;
-    font-weight: 700;
-    border: 1px solid black ;
-    height: 4rem;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.carritoBtn1{
-    background-color: #28a745 ;
-    color: black;
-    font-size: 1rem;
-    font-weight: 700;
-    border: 1px solid black ;
-    height: 4rem;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-
-.ItemCount{
-    background-color: white;
-    text-align: center;
-    display: inline-block;
-    padding: 1rem;
-    margin: 0 0.5rem;
-}
-
-.Counter{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    justify-content:center;
     align-items: center;
 }
 
-.Counter-op{
-    margin: 0.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.product-picture{
+    width: 500px;
+    height: auto;
+}
+
+.product-detailBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FBFBFB;
+    height: 100%;
+    padding: 2rem;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-detail-title{
+    font-size: 2rem;
+    text-align: left;
+    text-transform: capitalize;
+   
+}
+
+.product-category{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product-description{
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.product-description span{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.product-price{
+    background-color: white;
+    color: #262626;
+    width: fit-content;
+    padding: 0.5rem;
+    font-weight: 600;
+    align-self: center;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product-price span{
+    font-weight: 900;
+    color: black;
+}
+
+.product-end{
+    background-color: #FFA900;
+    margin: 1rem;
+    border: none;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    border: white;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.product-end:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .product{
+        margin: 1rem;
+    }
+    .product-title{
+        position: relative;
+        margin: 1rem 0;
+    }
+    
+    .product-detail{
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+    .product-detailBox{
+        width: 100% ;
+        padding: 1rem;
+    }
+    .product-picture{
+        width: 100%;
+        position: relative;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+   
+    .product-category{
+        margin: 1rem 0;
+    }
+    .product-description{
+        margin: 1rem 0;
+    }
+    .product-price{
+        margin-bottom: 1rem;
+    }
+
 }

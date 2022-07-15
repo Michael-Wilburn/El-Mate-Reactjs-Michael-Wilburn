@@ -1,10 +1,10 @@
 .loader {
     position: absolute;
     top: 40vh;
-    left: 50vw;
+    left: calc(50vw - 2rem);
     font-size: 4rem;
     animation: rotate 1.5s linear infinite;
-    color: white;
+    color: black;
   }
   
   @keyframes rotate {

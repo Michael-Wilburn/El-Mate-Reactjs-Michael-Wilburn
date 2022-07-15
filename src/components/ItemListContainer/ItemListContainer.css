@@ -1,13 +1,9 @@
-.ItemListContainer{
-    text-align: center;
-}
-.ItemListTitle{
-    color: black;
+.item-list-title{
+    color: #262626;
     text-transform: uppercase;
-    text-shadow:1px 1px black;
     padding: 3rem 0;
+    text-decoration: underline;
 }
-
 .ItemList {
   width: 90vw;
   margin: 0 auto;
@@ -19,33 +15,6 @@
   list-style:none;
   padding-bottom: 4rem;
 }
-.Item{
-    text-align: center;
-    text-decoration: none; 
-    text-transform: capitalize;
-    padding: 0.25rem;
-    background-color: grey;
-    border-radius: 1rem;
-    max-width: 400px;
-    
-}
-.ItemPrice{
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-.product-img {
-  height: 400px;
-  width: 400px;
-  border: 1px solid black;
-}
-.product-img {
-  display: block;
-  width: 100%;
-  max-height: 20rem;
-  border-radius: 1rem;
-}
-
 .loader {
   position: absolute;
   top: 40vh;
@@ -61,14 +30,4 @@
   }
 }
 
-.ItemBtn{
-  background-color:#28a745 ;
-  color: black;
-  font-size: 1rem;
-  border: none;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin: 1rem;
 
-
-}

@@ -1,28 +1,107 @@
-.Cart-Item{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 90%;
-    justify-content: space-around;
-    box-shadow: 0px 0px 10px 0px #333 inset;
-    margin-bottom: 10px;
+.cart-item{
+    background-color: #FBFBFB;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    margin-bottom: 1rem;
+    align-items: center;
+    margin: 1rem 6rem;
+   
 }
-
-.Cart-Item p {
+.cart-image{
+    height: 50px;
+    width: auto;
+    display: flex;
+    margin: 0 auto;
+    
+}
+.cart-category{
     font-weight: 700;
     text-transform: capitalize;
 }
-.Cart-title{
-    max-width: 100px;
+
+.cart-quantity span{
+    font-weight: 700;
+}
+.cart-remove{
+    background-color:#F93154 ;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+    max-width: max-content;
+    margin: 0 auto;
+    
 }
 
-.Cart-Item button {
-    background-color: #dc3545
-    ;
-    color:white;
+.cart-remove:hover{
+    color: gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+
+.cart-price span{
     font-weight: 700;
+}
+
+.cart-subtotal span{
+    font-weight: 700;
+}
+
+.cart-clear{
+    background-color:#F93154 ;
     border: none;
-    border-radius: 5px;
-    margin: 10px;
+    font-weight: 600;
+    color: white;
     cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+    max-width: max-content;
+    margin: 0 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cart-clear:hover{
+    color: gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cart-order{
+    background-color:#00B74A ;
+    border: none;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+    max-width: max-content;
+    margin: 0 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cart-order:hover{
+    color: gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media (max-width: 1000px) {
+    .cart-item{
+        margin: 2rem;
+     }
+
+}
+
+
+@media (max-width: 768px) {
+    .cart-item{
+       font-size: 0.75rem;
+       grid-template-columns: repeat(3, 1fr);
+       padding: 0.5rem;
+       margin: 1rem;
+    }
+   .cart-remove{
+       font-size: 0.75rem;
+   }
 }

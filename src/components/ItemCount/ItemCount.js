@@ -1,4 +1,8 @@
 import { useState } from "react"
+import "./ItemCount.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 
 const ItemCount = ({onAdd, stock, initial = 0}) =>{
     const [count, setCount] = useState(initial)
@@ -12,14 +16,16 @@ const ItemCount = ({onAdd, stock, initial = 0}) =>{
             setCount(count - 1)
         }
     }
+    
+   
     return (
-        <div className="Counter">
-            <div className="Counter-op">
-            <button className='carritoBtn1' onClick={decrement}> - </button>
-            <p className='ItemCount'>{count}</p>
-            <button className='carritoBtn' onClick={increment}> + </button>
+        <div className="counter">
+            <div className="counter-box">
+                <button className='counterBtn' id='btn-left' onClick={decrement}> - </button>
+                <p className='counter-number'>{count}</p>
+                <button className='counterBtn' id='btn-right' onClick={increment}> + </button>
             </div>
-            <button className='carritoBtn2' onClick={()=> onAdd(count)}> Agregar al carrito</button>
+            <button className='counterAdd' onClick={()=> onAdd(count)}> <FontAwesomeIcon className="counterCart" icon={faShoppingCart}/> Agregar al carrito</button>
         </div>
     )
 }
