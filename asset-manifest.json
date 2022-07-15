@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/El-Mate-Reactjs-Michael-Wilburn/static/css/main.07189dd9.css",
+    "main.js": "/El-Mate-Reactjs-Michael-Wilburn/static/js/main.3b39a89e.js",
+    "static/js/787.03195ed5.chunk.js": "/El-Mate-Reactjs-Michael-Wilburn/static/js/787.03195ed5.chunk.js",
+    "static/media/mate.png": "/El-Mate-Reactjs-Michael-Wilburn/static/media/mate.25ee1661f15faf74564e.png",
+    "index.html": "/El-Mate-Reactjs-Michael-Wilburn/index.html",
+    "main.07189dd9.css.map": "/El-Mate-Reactjs-Michael-Wilburn/static/css/main.07189dd9.css.map",
+    "main.3b39a89e.js.map": "/El-Mate-Reactjs-Michael-Wilburn/static/js/main.3b39a89e.js.map",
+    "787.03195ed5.chunk.js.map": "/El-Mate-Reactjs-Michael-Wilburn/static/js/787.03195ed5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07189dd9.css",
+    "static/js/main.3b39a89e.js"
+  ]
+}
